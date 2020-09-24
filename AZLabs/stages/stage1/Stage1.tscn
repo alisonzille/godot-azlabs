@@ -1,0 +1,124 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://miscellaneous/ChageScene.tscn" type="PackedScene" id=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.207843, 0.337255, 0.101961, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[node name="Stage1" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0573621, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -2.09704, -0.044466, 0 )
+
+[node name="Floor" type="CSGBox" parent="."]
+transform = Transform( -1.84079, 0, 0, 0, 0.1, 0, 0, 0, 2.09226, 5.98528, -0.350458, -1.45549 )
+use_collision = true
+width = 12.982
+depth = 9.56981
+material = SubResource( 1 )
+
+[node name="Wall" type="CSGBox" parent="."]
+transform = Transform( -1.84079, 0, 0, 0, 0.1, 0, 0, 0, 2.09226, 5.75909, 5.21216, 8.2714 )
+use_collision = true
+width = 13.2222
+height = 111.73
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="Wall1" type="CSGBox" parent="."]
+transform = Transform( 8.04635e-08, 0, -2.09226, 0, 0.1, 0, -1.84079, 0, -9.14556e-08, -5.88779, 5.21216, -1.37963 )
+use_collision = true
+width = 11.5492
+height = 111.73
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="Wall2" type="CSGBox" parent="."]
+transform = Transform( 8.04635e-08, 0, -2.09226, 0, 0.1, 0, -1.84079, 0, -9.14556e-08, 17.6262, 5.21216, -1.37963 )
+use_collision = true
+width = 11.5492
+height = 111.73
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="Wall3" type="CSGBox" parent="."]
+transform = Transform( -1.84079, 0, 0, 0, 0.1, 0, 0, 0, 2.09226, 5.75909, 5.21216, -11.2533 )
+use_collision = true
+width = 13.2222
+height = 111.73
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="Platform" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 1.07066, 0.357657, 5.50328 )
+use_collision = true
+width = 0.848787
+height = 8.42157
+depth = 0.864384
+material = SubResource( 3 )
+
+[node name="Platform2" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 13.5398, 2.33211, -3.10482 )
+use_collision = true
+width = 0.70301
+height = 8.42157
+depth = 0.702769
+material = SubResource( 3 )
+
+[node name="Platform3" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 13.5398, 1.50127, -9.33936 )
+use_collision = true
+width = 0.70301
+height = 8.42157
+depth = 0.702769
+material = SubResource( 3 )
+
+[node name="Platform4" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 7.57397, 1.50127, -9.33936 )
+use_collision = true
+width = 0.70301
+height = 8.42157
+depth = 0.702769
+material = SubResource( 3 )
+
+[node name="Platform5" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 7.74827, 3.97352, -3.10482 )
+use_collision = true
+width = 0.70301
+height = 8.42157
+depth = 0.702769
+material = SubResource( 3 )
+
+[node name="Platform6" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 1.64254, 3.01405, -5.88979 )
+use_collision = true
+width = 0.70301
+height = 8.42157
+depth = 2.1592
+material = SubResource( 3 )
+
+[node name="Platform7" type="CSGBox" parent="."]
+transform = Transform( 5.03754, 0, 0, 0, 0.179062, 0, 0, 0, 4.49832, 13.5054, 1.45673, 4.56018 )
+use_collision = true
+width = 1.1616
+height = 18.996
+depth = 1.28587
+material = SubResource( 3 )
+
+[node name="Platform8" type="CSGBox" parent="."]
+transform = Transform( 4.85742, -0.0474546, 0, 1.33504, 0.172659, 0, 0, 0, 4.49832, 6.41801, 1.82109, 6.49274 )
+use_collision = true
+width = 1.73324
+depth = 0.421396
+material = SubResource( 3 )
+
+[node name="ChageScene" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.49767, 0.490803, -9.0272 )
+new_scene = "res://miscellaneous/menu/Menu.tscn"

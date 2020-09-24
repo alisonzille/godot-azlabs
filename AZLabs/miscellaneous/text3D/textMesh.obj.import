@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/textMesh.obj-30f5b790a9302694b57ef4b841707775.mesh"
+
+[deps]
+
+files=[ "res://.import/textMesh.obj-30f5b790a9302694b57ef4b841707775.mesh" ]
+
+source_file="res://miscellaneous/text3D/textMesh.obj"
+dest_files=[ "res://.import/textMesh.obj-30f5b790a9302694b57ef4b841707775.mesh", "res://.import/textMesh.obj-30f5b790a9302694b57ef4b841707775.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
